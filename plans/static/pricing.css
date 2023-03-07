@@ -1,0 +1,29 @@
+html {
+  font-size: 14px;
+  background-color: rgb(33, 24, 73);
+  color: beige;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+    background-color: rgb(33, 24, 73);
+    color: beige;
+  }
+}
+body {
+  background-color: rgb(33, 24, 73);
+  color: beige;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+  color:rgb(33, 24, 73) !important
+}
