@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.views import generic
 from .models import FitnessPlan
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 
 def home(request):
     plans = FitnessPlan.objects
@@ -19,6 +20,7 @@ def plan(request,pk):
 def join(request):
     return render(request, 'plans/join.html')
 
+@login_required
 def checkout(request):
     return render(request, 'plans/checkout.html')
 
